@@ -1,0 +1,51 @@
+export default function Header() {
+  return (
+    <header className='backdrop-blur sticky top-0 z-50 bg-white/60 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800'>
+      <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='flex items-center justify-between h-16 p-10'>
+          <div className='flex items-center gap-4 p-10'>
+            <a href='/' className='flex items-center gap-3 no-underline'>
+              <div className='text-slate-900 dark:text-slate-100 p-10'>
+                <h1 className='text-lg font-semibold tracking-tight'>Lilith Luce</h1>
+                <p className='text-xs text-slate-600 dark:text-slate-300'>
+                  Full-Stack Software Developer
+                </p>
+              </div>
+            </a>
+          </div>
+
+          {/* Desktop nav */}
+          <nav className='flex items-center gap-6'>
+            <a
+              href='/projects'
+              className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
+              Projects
+            </a>
+            <a
+              href='/contact'
+              className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
+              Contact
+            </a>
+
+            <a
+              href='https://linkedin.com/'
+              target='_blank'
+              rel='noreferrer'
+              className='text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'
+              aria-label='LinkedIn'>
+              LinkedIn
+            </a>
+            <a
+              href='https://linkedin.com/'
+              target='_blank'
+              rel='noreferrer'
+              className='text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'
+              aria-label='github'>
+              Github
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+  );
+}
