@@ -1,6 +1,9 @@
+import ThemeToggle from "./ThemeToggle";
 export default function Header() {
+  const linkTheme = "text-slate-600 dark:text-slate-300 hover:text-accent-light dark:hover:text-accent transition-colors";
+
   return (
-    <header className='backdrop-blur sticky top-0 z-50 border-b bg-primary-soft_light dark:bg-primary-soft_dark/60 border-accent-soft_light/60 dark:border-accent-soft_dark/60'>
+    <header className='backdrop-blur sticky top-0 z-50 border-b bg-primary/60 border-accent-soft/60'>
       <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16 p-10'>
           <div className='flex items-center gap-4 p-10'>
@@ -20,7 +23,7 @@ export default function Header() {
             </a>
             <a
               href='/contact'
-              className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
+              className={`${linkTheme} font-medium`}>
               Contact
             </a>
 
@@ -28,7 +31,7 @@ export default function Header() {
               href='https://linkedin.com/'
               target='_blank'
               rel='noreferrer'
-              className='text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'
+              className={`${linkTheme}`}
               aria-label='LinkedIn'>
               LinkedIn
             </a>
@@ -36,10 +39,11 @@ export default function Header() {
               href='https://linkedin.com/'
               target='_blank'
               rel='noreferrer'
-              className='text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'
+              className={`${linkTheme}`}
               aria-label='github'>
               Github
             </a>
+            <ThemeToggle />
           </nav>
         </div>
       </div>

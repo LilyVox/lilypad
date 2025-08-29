@@ -1,20 +1,39 @@
 @import 'tailwindcss';
-
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
-  --color-primary-light: oklch(0.4568 0.2146 277.02);
-  --color-primary-soft_light: #oklch(0.7641 0.0974 295.48);
-  --color-primary-dark: oklch(0.5499 0.2295 309.45);
-  --color-primary-soft_dark: oklch(0.2723 0.0944 285.93);
+    --color-primary: #A1D8FC;
+    --color-primary-soft: #D7EEFE;
+    --color-primary-text: #010C14;
 
-  --color-secondary-light: #cb463a;
-  --color-secondary-soft_light: #f1b2a5;
-  --color-secondary-dark: #d39936;
-  --color-secondary-soft_dark: #56401d;
+    --color-secondary: #4361EE;
+    --color-secondary-soft: #6A83F1;
 
-  --color-accent-light: #3acb46;
-  --color-accent-soft_light: #b7eab1;
-  --color-accent-dark: #10b981;
-  --color-accent-soft_dark: #1b4c37;
+    --color-accent: #71F79F;
+    --color-accent-soft: #9FF9BE;
+}
+@layer theme {
+  .dark {
+    --color-primary: #171923;
+    --color-primary-soft: #404663;
+    --color-primary-text: #E6E8EF;
+
+    --color-secondary: #55286F;
+    --color-secondary-soft: #944BBE;
+
+    --color-accent: #BC96E6;
+    --color-accent-soft: #D5BDEF;
+  }
+  .light {
+    --color-primary: #A1D8FC;
+    --color-primary-soft: #D7EEFE;
+    --color-primary-text: #010C14;
+
+    --color-secondary: #6A83F1;
+    --color-secondary-soft: #4361EE;
+
+    --color-accent: #71F79F;
+    --color-accent-soft: #9FF9BE;
+  }
 }
 
 .card {

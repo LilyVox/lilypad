@@ -12,8 +12,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.parallax {
+.dark .parallax {
   background-image: url('NightCity.svg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.parallax {
+  background-image: url('DayCity.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

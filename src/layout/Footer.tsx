@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className='mt-12 border-t backdrop-blur bg-primary-soft_light dark:bg-primary-soft_dark/60 border-accent-soft_light/60 dark:border-accent-soft_dark/60'>
+    <footer className='mt-12 border-t backdrop-blur bg-primary/60 border-accent/60'>
       <div className='max-w-6xl mx-auto px-6 py-10'>
         <div className='flex flex-col md:flex-row md:items-center md:justify-between gap-6'>
           <div>

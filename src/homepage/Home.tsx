@@ -1,7 +1,7 @@
 import Projects from '../projects';
 
 export default function Home() {
-  const card = 'm-4 p-4 backdrop-blur dark:bg-primary-dark/60 rounded-md max-w-2xl';
+  const card = 'm-4 p-4 backdrop-blur bg-primary/60 rounded-md max-w-2xl text-primary-text';
   return (
     <section id="about" className="card">
       <p className={`${card}`}>A full-stack developer with a focus on front-end engineering and modern web technologies. Proficient in TypeScript, React, Node.js, Express, PostgreSQL, Tailwindcss, and the MERN stack with additional experience in PHP and PowerShell automation.</p>

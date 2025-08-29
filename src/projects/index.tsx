@@ -1,4 +1,4 @@
-import ProjectCard, { type Project, type ProjectLink } from './ProjectVM';
+import ProjectCard, { type Project } from './ProjectVM';
 import OPScreenie from '../assets/screenshots/OnePiecedleScreenie.png';
 import FCScreenie from '../assets/screenshots/FlashcardManager.png';
 import PomoScreenie from '../assets/screenshots/PomodoroTimer.png';
