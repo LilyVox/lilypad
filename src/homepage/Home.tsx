@@ -1,36 +1,13 @@
-import Footer from '../layout/Footer';
-import Header from '../layout/Header';
+import Projects from '../projects';
 
 export default function Home() {
+  const card = 'm-4 p-4 backdrop-blur dark:bg-primary-dark/60 rounded-md max-w-2xl';
   return (
-    <div className='parallax'>
-      <Header />
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <h1>Foreground Content</h1>
-      <p>Scroll down to see the effect.</p>
-      <Footer />
-    </div>
+    <section id="about" className="card">
+      <p className={`${card}`}>A full-stack developer with a focus on front-end engineering and modern web technologies. Proficient in TypeScript, React, Node.js, Express, PostgreSQL, Tailwindcss, and the MERN stack with additional experience in PHP and PowerShell automation.</p>
+      <p className={`${card} indent-20`}>I build applications that are clean, scalable, and user-focused. My background across both front-end and back-end development enables me to deliver solutions that balance performance with usability.</p>
+      <p className={`${card} indent-20`}>Seeking opportunities as a Front-End Developer or Software Engineer where I can contribute technical expertise, attention to detail, critical thinking and a drive to grow with a collaborative team.</p>
+      <Projects />
+    </section>
   );
 }

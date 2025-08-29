@@ -1,15 +1,12 @@
 export default function Header() {
   return (
-    <header className='backdrop-blur sticky top-0 z-50 bg-white/60 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800'>
+    <header className='backdrop-blur sticky top-0 z-50 border-b bg-primary-soft_light dark:bg-primary-soft_dark/60 border-accent-soft_light/60 dark:border-accent-soft_dark/60'>
       <div className='max-w-6xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16 p-10'>
           <div className='flex items-center gap-4 p-10'>
             <a href='/' className='flex items-center gap-3 no-underline'>
               <div className='text-slate-900 dark:text-slate-100 p-10'>
                 <h1 className='text-lg font-semibold tracking-tight'>Lilith Luce</h1>
-                <p className='text-xs text-slate-600 dark:text-slate-300'>
-                  Full-Stack Software Developer
-                </p>
               </div>
             </a>
           </div>

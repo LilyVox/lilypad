@@ -1,41 +1,22 @@
-#root {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+@import 'tailwindcss';
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+@theme {
+  --color-primary-light: oklch(0.4568 0.2146 277.02);
+  --color-primary-soft_light: #oklch(0.7641 0.0974 295.48);
+  --color-primary-dark: oklch(0.5499 0.2295 309.45);
+  --color-primary-soft_dark: oklch(0.2723 0.0944 285.93);
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  --color-secondary-light: #cb463a;
+  --color-secondary-soft_light: #f1b2a5;
+  --color-secondary-dark: #d39936;
+  --color-secondary-soft_dark: #56401d;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  --color-accent-light: #3acb46;
+  --color-accent-soft_light: #b7eab1;
+  --color-accent-dark: #10b981;
+  --color-accent-soft_dark: #1b4c37;
 }
 
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
