@@ -13,7 +13,7 @@
 }
 
 .dark .parallax {
-  background-image: url('NightCity.svg');
+  background-image: url('./assets/City/NightCity.svg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
   z-index: -1;
 }
 .parallax {
-  background-image: url('DayCity.png');
+  background-image: url('./assets/City/DayCity.png');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
