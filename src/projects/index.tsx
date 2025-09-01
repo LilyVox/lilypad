@@ -66,7 +66,7 @@ export default function Projects() {
     ],
   };
   return (
-    <section id='projects' className='card'>
+    <section id='projects' className='align-baseline flex p-[2em] justify-center items-center flex-wrap'>
       <ProjectCard project={OnePieceDle} />
       <ProjectCard project={FlashCards} />
       <ProjectCard project={Pomodoro} />

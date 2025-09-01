@@ -19,8 +19,8 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className='m-2 my-4 group relative rounded-2xl overflow-hidden border border-accent backdrop-blur bg-secondary-soft/60 shadow-sm hover:shadow-lg transition-shadow max-w-md'>
-      <div className='h-44 sm:h-56 max-w-md bg-secondary/80 overflow-hidden'>
+    <article className='m-2 my-4 group relative rounded-2xl overflow-hidden border border-accent backdrop-blur bg-primary-soft/80 shadow-sm hover:shadow-lg transition-shadow max-w-md'>
+      <div className='h-44 sm:h-56 max-w-md bg-primary/60 overflow-hidden'>
         <img
           src={project.image}
           alt={project.title}
