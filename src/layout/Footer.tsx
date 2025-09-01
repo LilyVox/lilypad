@@ -14,24 +14,29 @@ export default function Footer() {
 
           <nav aria-label='Footer navigation' className='flex flex-wrap items-center gap-4'>
             <a
-              href='/projects'
+              href='#about'
+              className='text-sm text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'>
+              About
+            </a>
+            <a
+              href='#projects'
               className='text-sm text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'>
               Projects
             </a>
-            <a
+            {/* <a
               href='/contact'
               className='text-sm text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'>
               Contact
-            </a>
+            </a> */}
             <a
-              href='https://github.com/'
+              href='https://github.com/LilyVox'
               target='_blank'
               rel='noreferrer'
               className='text-sm text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'>
               GitHub
             </a>
             <a
-              href='https://linkedin.com/'
+              href='https://www.linkedin.com/in/lilith-luce/'
               target='_blank'
               rel='noreferrer'
               className='text-sm text-slate-600 dark:text-slate-300 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors'>
@@ -42,7 +47,8 @@ export default function Footer() {
 
         <div className='mt-8 border-t border-slate-100 dark:border-slate-800 pt-6'>
           <p className='text-center text-sm text-slate-500 dark:text-slate-400'>
-            © {new Date().getFullYear()} Lilith Luce. All rights reserved.
+            ©{new Date().getFullYear()} Lilith Luce. All rights reserved.
+            Under construction.
           </p>
         </div>
       </div>

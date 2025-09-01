@@ -17,18 +17,23 @@ export default function Header() {
           {/* Desktop nav */}
           <nav className='flex items-center gap-6'>
             <a
-              href='/projects'
+              href='#projects'
               className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
               Projects
             </a>
             <a
+              href='#about'
+              className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
+              About
+            </a>
+            {/* <a
               href='/contact'
               className={`${linkTheme} font-medium`}>
               Contact
-            </a>
+            </a> */}
 
             <a
-              href='https://linkedin.com/'
+              href='https://www.linkedin.com/in/lilith-luce/'
               target='_blank'
               rel='noreferrer'
               className={`${linkTheme}`}
@@ -36,7 +41,7 @@ export default function Header() {
               LinkedIn
             </a>
             <a
-              href='https://linkedin.com/'
+              href='https://github.com/LilyVox'
               target='_blank'
               rel='noreferrer'
               className={`${linkTheme}`}
