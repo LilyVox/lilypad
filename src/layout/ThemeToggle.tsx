@@ -4,7 +4,7 @@ import Moon from '../assets/moon-stars-fill.svg';
 
 const ThemeToggle = () => {
   const iconForm = (image: string) =>{
-    return <img src={image} alt={image} className='invert' />
+    return <img src={image} alt={image} className='theme_filter' />;
   }
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem('theme');

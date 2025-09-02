@@ -35,3 +35,10 @@
     --color-accent-soft: #9FF9BE;
   }
 }
+
+.dark .theme_filter {
+  filter: invert(70%) sepia(45%) saturate(1384%) hue-rotate(207deg) brightness(97%) contrast(86%);
+}
+.theme_filter {
+  filter: invert(36%) sepia(40%) saturate(2362%) hue-rotate(210deg) brightness(93%) contrast(102%);
+}

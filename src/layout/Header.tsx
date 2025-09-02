@@ -1,6 +1,6 @@
 import ThemeToggle from "./ThemeToggle";
 export default function Header() {
-  const linkTheme = "text-slate-600 dark:text-slate-300 hover:text-accent-light dark:hover:text-accent transition-colors";
+  const linkTheme = "text-primary-text hover:text-accent transition-colors";
 
   return (
     <header className='backdrop-blur sticky top-0 z-50 border-b bg-primary/60 border-accent-soft/60'>
@@ -17,14 +17,14 @@ export default function Header() {
           {/* Desktop nav */}
           <nav className='flex items-center gap-6'>
             <a
-              href='#projects'
-              className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
-              Projects
+              href='#about'
+              className='text-primary-text hover:text-accent transition-colors font-medium'>
+              About
             </a>
             <a
-              href='#about'
-              className='text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors font-medium'>
-              About
+              href='#projects'
+              className='text-primary-text hover:text-accent transition-colors font-medium'>
+              Projects
             </a>
             {/* <a
               href='/contact'
